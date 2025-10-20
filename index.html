@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="src/style.css">
+    <title>About my Idea</title>
+</head>
+<body id="body">
+<nav>
+    <ul>
+        <li><a href="#heroSection">Home</a></li>
+        <li><a href="#aboutSection">About</a></li>
+        <li><a href="#stackSection">Stack</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div id="darkModeBtn">
+        <svg viewBox="0 0 403 403" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M201.5 402.75C312.65 402.75 402.75 312.65 402.75 201.5C402.75 192.182 388.783 190.633 383.973 198.622C373.715 215.614 359.723 230.049 343.06 240.834C326.396 251.618 307.496 258.469 287.793 260.867C268.089 263.265 248.098 261.148 229.334 254.676C210.57 248.204 193.524 237.546 179.489 223.511C165.454 209.476 154.796 192.43 148.324 173.666C141.852 154.902 139.735 134.911 142.133 115.207C144.531 95.5038 151.382 76.6043 162.166 59.9405C172.951 43.2766 187.386 29.2854 204.378 19.0266C212.367 14.1966 210.818 0.25 201.5 0.25C90.3496 0.25 0.25 90.3496 0.25 201.5C0.25 312.65 90.3496 402.75 201.5 402.75Z" fill="#3AA9FF"/>
+        </svg>
+    </div>
+    <div id="lightModeBtn">
+        <svg viewBox="0 0 701 701" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M350.5 595.208C359.062 595.209 367.327 598.353 373.725 604.043C380.124 609.733 384.212 617.573 385.214 626.077L385.458 630.167V665.125C385.448 674.035 382.037 682.605 375.92 689.084C369.803 695.563 361.444 699.462 352.549 699.984C343.654 700.507 334.895 697.613 328.063 691.894C321.23 686.175 316.839 678.063 315.786 669.215L315.542 665.125V630.167C315.542 620.895 319.225 612.003 325.781 605.447C332.337 598.891 341.228 595.208 350.5 595.208ZM571.192 522.145L574.478 525.047L598.949 549.518C605.218 555.809 608.859 564.25 609.13 573.128C609.401 582.006 606.282 590.654 600.408 597.316C594.534 603.977 586.344 608.154 577.503 608.996C568.661 609.838 559.83 607.283 552.804 601.85L549.518 598.949L525.047 574.478C519.014 568.456 515.39 560.437 514.855 551.93C514.32 543.423 516.912 535.013 522.144 528.283C527.375 521.553 534.884 516.967 543.26 515.385C551.637 513.804 560.302 515.338 567.626 519.698L571.192 522.145ZM175.953 525.047C181.972 531.067 185.588 539.076 186.122 547.571C186.656 556.067 184.072 564.466 178.855 571.192L175.953 574.478L151.482 598.949C145.191 605.219 136.749 608.859 127.872 609.13C118.994 609.401 110.346 606.283 103.684 600.408C97.0225 594.534 92.8463 586.345 92.0041 577.503C91.1618 568.661 93.7166 559.83 99.1495 552.804L102.051 549.518L126.522 525.047C133.078 518.493 141.968 514.812 151.237 514.812C160.507 514.812 169.397 518.493 175.953 525.047ZM70.8333 315.542C79.7434 315.552 88.3136 318.963 94.7926 325.08C101.272 331.197 105.171 339.556 105.693 348.451C106.215 357.346 103.321 366.105 97.6021 372.937C91.8832 379.77 83.7712 384.161 74.9234 385.214L70.8333 385.458H35.8749C26.9648 385.448 18.3946 382.037 11.9156 375.92C5.43655 369.803 1.53763 361.444 1.01545 352.549C0.493275 343.654 3.38726 334.895 9.1061 328.063C14.8249 321.23 22.937 316.839 31.7848 315.786L35.8749 315.542H70.8333ZM665.125 315.542C674.035 315.552 682.605 318.963 689.084 325.08C695.563 331.197 699.462 339.556 699.984 348.451C700.507 357.346 697.613 366.105 691.894 372.937C686.175 379.77 678.063 384.161 669.215 385.214L665.125 385.458H630.167C621.256 385.448 612.686 382.037 606.207 375.92C599.728 369.803 595.829 361.444 595.307 352.549C594.785 343.654 597.679 334.895 603.398 328.063C609.117 321.23 617.229 316.839 626.076 315.786L630.167 315.542H665.125ZM148.196 99.1496L151.482 102.051L175.953 126.522C182.223 132.813 185.863 141.255 186.134 150.132C186.405 159.01 183.287 167.658 177.413 174.32C171.538 180.982 163.349 185.158 154.507 186C145.665 186.842 136.834 184.288 129.808 178.855L126.522 175.953L102.051 151.482C96.0413 145.458 92.4351 137.449 91.9085 128.956C91.3818 120.463 93.9708 112.07 99.1901 105.35C104.41 98.6292 111.901 94.0432 120.26 92.4513C128.619 90.8594 137.271 92.3709 144.595 96.7025L148.196 99.1496ZM598.949 102.051C604.968 108.071 608.584 116.08 609.118 124.575C609.652 133.071 607.068 141.47 601.85 148.196L598.949 151.482L574.478 175.953C568.187 182.223 559.745 185.863 550.868 186.134C541.99 186.405 533.342 183.287 526.68 177.413C520.018 171.538 515.842 163.349 515 154.507C514.158 145.665 516.712 136.834 522.145 129.808L525.047 126.522L549.518 102.051C556.073 95.4975 564.964 91.8158 574.233 91.8158C583.503 91.8158 592.393 95.4975 598.949 102.051ZM350.5 0.916687C359.062 0.917817 367.327 4.06141 373.725 9.75119C380.124 15.441 384.212 23.2812 385.214 31.7849L385.458 35.875V70.8334C385.448 79.7435 382.037 88.3137 375.92 94.7927C369.803 101.272 361.444 105.171 352.549 105.693C343.654 106.215 334.895 103.321 328.063 97.6022C321.23 91.8833 316.839 83.7713 315.786 74.9235L315.542 70.8334V35.875C315.542 26.6035 319.225 17.7117 325.781 11.1557C332.337 4.59978 341.228 0.916687 350.5 0.916687ZM350.5 175.708C384.748 175.706 418.242 185.765 446.822 204.636C475.401 223.507 497.808 250.358 511.258 281.854C524.708 313.351 528.609 348.104 522.477 381.799C516.344 415.493 500.448 446.643 476.763 471.381C453.079 496.118 422.648 513.353 389.252 520.944C355.856 528.535 320.966 526.148 288.915 514.079C256.864 502.011 229.065 480.792 208.97 453.059C188.875 425.327 177.369 392.302 175.883 358.086L175.708 350.5L175.883 342.914C177.838 297.914 197.089 255.406 229.622 224.254C262.155 193.102 305.457 175.711 350.5 175.708Z" fill="white"/>
+        </svg>
+    </div>
+</nav>
+    <main>
+        <section id="heroSection">
+            <div id="leftside">
+                <h1>ClassMate</h1>
+                <p>Ja vēlies zināt vairāk – ieskaties mūsu stāstā.</p>
+                <div id="leftSideBtns">
+                    <button class="leftSideBtn" id="leftSideBtn1"><a href="#stackSection">Our tech stack</a></button>
+                    <button class="leftSideBtn" id="leftSideBtn2"><a href="#aboutSection">About Us</a></button>
+                </div>
+            </div>
+            <div id="rightside">
+                <img src="src/imgs/img.png" alt="">
+            </div>
+        </section>
+        <section id="aboutSection">
+            <h1>
+                About Us
+            </h1>
+            <p>Tā ir mājaslapa, kas darbojas pēc līdzīga principa kā Airbnb, tikai paredzēta privāto skolotāju un instruktoru rezervācijām. Lietotājs var izvēlēties sev interesējošu nodarbību un konkrētu skolotāju, rezervēt laiku un saņemt automātisku apstiprinājumu. Sistēmā ir iebūvēta īsziņu sūtīšana ar atgādinājumiem par nodarbības laiku, kā arī iespēja pievienot rezervēto nodarbību Google kalendāram. Lai atvieglotu saziņu starp skolotāju un skolēnu, platformā būs pieejams arī iebūvēts čats.</p>
+        </section>
+        <section id="stackSection">
+            <h1 id="stackSectionHeader">STACK</h1>
+            <div id="cards">
+
+            <div class="card">
+                <div class="upperCard">
+                    <img src="src/imgs/Vector%20(1).png" alt="" class="cardImg">
+                </div>
+                <div class="hiddenText">
+                <ul>
+                    <li> Student  </li>
+                    <li> Teacher </li>
+                    <li> Appointments </li>
+                    <li> Chats </li>
+                    <li> Messages  </li>
+                </ul>
+
+                </div>
+                <button>
+                    More
+                </button>
+            </div>
+            <div class="card">
+                <div class="upperCard">
+                    <img src="src/imgs/Vector%20(2).png" alt="" class="cardImg">
+                </div>
+                <div class="hiddenText">
+                <ul>
+                    <li> Spring Security + JWT </li>
+                    <li> Spring Data JPA </li>
+                    <li> Spring WebSocket / STOMP </li>
+                    <li> Spring Boot Web </li>
+                    <li> OAuth2 Client </li>
+                </ul>
+
+                </div>
+                <button>
+                    More
+                </button>
+            </div>
+            <div class="card">
+                <div class="upperCard">
+                    <img src="src/imgs/Vector%20(5).png" alt="" class="cardImg">
+                </div>
+                <div class="hiddenText">
+                <ul>
+                    <li>UI skolēniem un skolotājiem.</li>
+                    <li>Reāllaika čats ar STOMP.js + Sock.js .</li>
+                    <li>Nodarbību rezervācija, kalendāra sinhronizācija.</li>
+                </ul>
+                </div>
+                <button>
+                    More
+                </button>
+            </div>
+            <div class="card">
+                <div class="upperCard">
+                    <img src="src/imgs/Vector%20(7).png" alt="" class="cardImg">
+                </div>
+                <div class="hiddenText">
+                    <ul>
+                        <li> Google Calendar API  </li>
+                        <li> Google API Client for Java </li>
+                        <li> Twilio / Vonage / Infobip</li>
+                    </ul>
+                </div>
+                <button>
+                    More
+                </button>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                All rights reserved
+            </li>
+            <li id="contact">
+                mkrustans@gmail.com
+            </li>
+        </ul>
+    </footer>
+<script src="src/script.js"></script>
+</body>
+</html>
