@@ -15,11 +15,14 @@ stackLi = [
     " Google API Client for Java ",
     " Twilio / Vonage / Infobip",
 ]
+cardsTitles = ['SQL','Java','Front','Back','Tools']
 cardsContainer = document.getElementById("cards")
 liArrays = [dbLi,backendLi,frontendLi,stackLi];
 
 burger = document.getElementById("burger");
 navUl = document.querySelector("nav ul");
+
+sortBtn = document.getElementById("sort");
 
 nameInput = document.getElementById("firstName");
 lastNameInput = document.getElementById("lastName");
@@ -67,6 +70,8 @@ function loadCards(wordToSearch) {
         cardElemUpperImg.classList.add("cardImg");
         cardElemUpper.appendChild(cardElemUpperImg)
 
+        cardElem.dataset.title = cardsTitles[i]
+
         cardElem.appendChild(cardElemUpper);
 
         hiddenText = document.createElement("div");
@@ -91,7 +96,23 @@ function loadCards(wordToSearch) {
         }
     }
 }
+sortAsc = true
+sortBtn.addEventListener("click", ev => {
+    ev.preventDefault();
+    cards = Array.from(cardsContainer.querySelectorAll(".card"));
 
+    cards.sort((a, b) => {
+        const titleA = a.dataset.title.toLowerCase();
+        const titleB = b.dataset.title.toLowerCase();
+        return sortAsc ? titleA.localeCompare(titleB) : titleB.localeCompare(titleA);
+    });
+
+    cards.forEach(card => cardsContainer.appendChild(card));
+
+    sortAsc = !sortAsc;
+
+    document.getElementById("sortBtn").textContent = sortAsc ? "A - Z" : "Z - A";
+})
 
 burger.addEventListener("click", () => {
     navUl.classList.toggle("show");
