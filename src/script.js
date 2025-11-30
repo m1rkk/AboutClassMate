@@ -41,7 +41,7 @@ document.getElementById("submitBtn").addEventListener("click", ev => {
     ev.preventDefault();
     if(nameInput.value === "" ||
         lastNameInput.value === "" ||
-        emailInput.value === "" ||
+        emailInput.value === "" || !emailInput.value.includes("@gmail.com") ||
         messageInput.value === ""){
         validMessage.classList = "errorMessage";
         validMessage.innerHTML = `<h1>Error, empty fields are not allowed</h1>`;
