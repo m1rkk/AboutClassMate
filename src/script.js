@@ -17,6 +17,15 @@ stackLi = [
 ]
 cardsContainer = document.getElementById("cards")
 liArrays = [dbLi,backendLi,frontendLi,stackLi];
+
+burger = document.getElementById("burger");
+navUl = document.querySelector("nav ul");
+
+nameInput = document.getElementById("firstName");
+lastNameInput = document.getElementById("lastName");
+emailInput = document.getElementById("email");
+messageInput = document.getElementById("message");
+validMessage = document.getElementById("validMessage");
 document.getElementById("darkModeBtn").addEventListener("click", ev =>  {
     document.getElementById("body").classList.toggle("dark");
 });
@@ -28,7 +37,23 @@ document.getElementById("searchBar").addEventListener("input", ev =>  {
         cardsContainer.innerHTML = ``;
         loadCards(document.getElementById("searchBar").value);
 })
-
+document.getElementById("submitBtn").addEventListener("click", ev => {
+    ev.preventDefault();
+    if(nameInput.value === "" ||
+        lastNameInput.value === "" ||
+        emailInput.value === "" ||
+        messageInput.value === ""){
+        validMessage.classList = "errorMessage";
+        validMessage.innerHTML = `<h1>Error, empty fields are not allowed</h1>`;
+    }
+    else {
+        validMessage.classList = "successMessage";
+        validMessage.innerHTML = `<h1>Successfully submitted</h1>`;
+    }
+    setTimeout(function (){
+        validMessage.classList = "hiddenMessage";
+    },3000)
+})
 function loadCards(wordToSearch) {
     for (let i = 0; i < 4; i++) {
         cardText = [];
@@ -66,3 +91,8 @@ function loadCards(wordToSearch) {
         }
     }
 }
+
+
+burger.addEventListener("click", () => {
+    navUl.classList.toggle("show");
+});
